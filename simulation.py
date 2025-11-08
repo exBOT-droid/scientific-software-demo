@@ -1,8 +1,12 @@
-# simulation.py
-def simulate_growth(population, growth_rate, years):
+# Enhanced simulation.py
+def simulate_growth():
+    population = float(input("Enter initial population: "))
+    growth_rate = float(input("Enter growth rate (as a decimal): "))
+    years = int(input("Enter number of years: "))
+    
     for year in range(years):
         population += population * growth_rate
         print(f"Year {year + 1}: Population = {population:.2f}")
 
-# Test the function with a population of 1000, growth rate of 5%, over 10 years
-simulate_growth(1000, 0.05, 10)
+# Run the simulation
+simulate_growth()
